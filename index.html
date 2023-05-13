@@ -76,20 +76,19 @@
               clip-rule="evenodd"
             ></path>
           </svg>
-        </button>
       </div>
     </header>
     <main class="main-sektor">
       <!-- ---------------------------section1------------------------- -->
 
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="contejner hero-contejner">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
           <button class="hero-btn" data-modal-open type="button">
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- ----------------------------section2------------------------ -->
       <section class="setion-produkt-procesing">
@@ -163,6 +162,7 @@
             <li class="projekt-item">
               <img
                 class="projekt-foto"
+                srcset="./images/section-3-index/img1.jpg 1x, images/section-3-index/img1-2x.jpg 2x"
                 src="./images/section-3-index/img1.jpg"
                 alt="komputer"
                 height="300"
@@ -172,6 +172,7 @@
             <li class="projekt-item">
               <img
                 class="projekt-foto"
+                srcset="./images/section-3-index/img2.jpg 1x, ./images/section-3-index/img2-2x.jpg"
                 src="./images/section-3-index/img2.jpg"
                 alt="mesenges"
                 height="300"
@@ -181,6 +182,7 @@
             <li class="projekt-item">
               <img
                 class="projekt-foto"
+                srcset="./images/section-3-index/img3.jpg 1x, ./images/section-3-index/img 3-2x.jpg"
                 src="./images/section-3-index/img3.jpg"
                 alt="optimization"
                 height="300"
@@ -594,24 +596,18 @@
     <!-- mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+        <svg class="btn-close-menu"
+          width="32px" height="32px"
         >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+          <use href="./images/icons.svg#icon-close-1">
+            
+          </use>
         </svg>
       </button>
 
       <ul class="mobile-menu list">
         <li class="menu-lisr">
-          <a href="./index.html" class="link">Studio</a>
+          <a href="./index.html" class="menu-item link">Studio</a>
         </li>
         <li class="menu-lisr">
           <a href="./portfolio.html" class="link">Portfolio</a>
@@ -621,7 +617,7 @@
         </li>
       </ul>
       <ul class="mobile-contacts list">
-        <li class="header-address-item">
+        <li class="mobile-address-item">
           <a class=" mobile-phone-list link" href="tel:+110001111111"
             >+11 (000) 111-11-11</a>
         </li>
@@ -669,6 +665,7 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
   </body>
 </html>
