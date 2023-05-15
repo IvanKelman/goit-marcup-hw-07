@@ -34,9 +34,7 @@
               <a class="header-link link curent" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
-              <a class="header-link link" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="header-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="header-item">
               <a class="header-link link" href="">Contacts</a>
@@ -59,6 +57,7 @@
           </ul>
         </address>
         <button
+          type="button"
           class="menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
@@ -76,11 +75,12 @@
               clip-rule="evenodd"
             ></path>
           </svg>
+        </button>
       </div>
     </header>
+
     <main class="main-sektor">
       <!-- ---------------------------section1------------------------- -->
-
       <section class="hero">
         <div class="contejner hero-contejner">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
@@ -156,13 +156,16 @@
       </section>
       <!-- ----------------------------sectione3--------------------------- -->
       <section class="projekt">
+        <h2 class="projekt-title">What are we doing</h2>
         <div class="projekt-contejner contejner">
-          <h2 class="projekt-title">What are we doing</h2>
           <ul class="projekt-list list">
             <li class="projekt-item">
               <img
                 class="projekt-foto"
-                srcset="./images/section-3-index/img1.jpg 1x, images/section-3-index/img1-2x.jpg 2x"
+                srcset="
+                  ./images/section-3-index/img1.jpg  1x,
+                  images/section-3-index/img1-2x.jpg 2x
+                "
                 src="./images/section-3-index/img1.jpg"
                 alt="komputer"
                 height="300"
@@ -172,7 +175,10 @@
             <li class="projekt-item">
               <img
                 class="projekt-foto"
-                srcset="./images/section-3-index/img2.jpg 1x, ./images/section-3-index/img2-2x.jpg"
+                srcset="
+                  ./images/section-3-index/img2.jpg    1x,
+                  ./images/section-3-index/img2-2x.jpg 2x
+                "
                 src="./images/section-3-index/img2.jpg"
                 alt="mesenges"
                 height="300"
@@ -182,7 +188,10 @@
             <li class="projekt-item">
               <img
                 class="projekt-foto"
-                srcset="./images/section-3-index/img3.jpg 1x, ./images/section-3-index/img 3-2x.jpg"
+                srcset="
+                  ./images/section-3-index/img3.jpg    1x,
+                  ./images/section-3-index/img3-2x.jpg 2x
+                "
                 src="./images/section-3-index/img3.jpg"
                 alt="optimization"
                 height="300"
@@ -201,15 +210,19 @@
               <div class="team-foto-contejaner">
                 <img
                   class="team-foto"
+                  srcset="
+                    ./images/sektione-4-index/markguerrero1x.jpg 1x,
+                    ./images/sektione-4-index/markguerrero2x.jpg 2x
+                  "
                   src="./images/sektione-4-index/markguerrero.jpg"
-                  alt="Mark Guerrero Product Designer"
+                  alt="Tom Ford Frontend Developer"
                   height="260"
                   width="264"
                 />
               </div>
               <div class="text-contejner">
-                <h3 class="team-name">Mark Guerrero</h3>
-                <p class="team-position">Product Designer</p>
+                <h3 class="team-name">Tom Ford</h3>
+                <p class="team-position">Frontend Developer</p>
                 <ul class="team-soc-list list">
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
@@ -247,6 +260,10 @@
               <div class="team-foto-contejaner">
                 <img
                   class="team-foto"
+                  srcset="
+                    ./images/sektione-4-index/tomford1x.jpg 1x,
+                    ./images/sektione-4-index/tomford2x.jpg 2x
+                  "
                   src="./images/sektione-4-index/tomford.jpg"
                   alt="Tom Ford Frontend Developer"
                   height="260"
@@ -293,6 +310,10 @@
               <div class="team-foto-contejaner">
                 <img
                   class="team-foto"
+                  srcset="
+                    ./images/sektione-4-index/camilagarcia1x.jpg 1x,
+                    ./images/sektione-4-index/camilagarcia2x.jpg 2x
+                  "
                   src="./images/sektione-4-index/camilacarcia.jpg"
                   alt="Camila Garcia Marketing"
                   height="260"
@@ -339,6 +360,10 @@
               <div class="team-foto-contejaner">
                 <img
                   class="team-foto"
+                  srcset="
+                    ./images/sektione-4-index/danielwilson@1x.jpg 1x,
+                    ./images/sektione-4-index/danielwilson@2x.jpg 2x
+                  "
                   src="./images/sektione-4-index/danielwilson.jpg"
                   alt="Daniel Wilson UI Designer"
                   height="260"
@@ -440,7 +465,7 @@
 
     <footer class="bottom-sektion">
       <div class="footer-item contejner">
-        <div class="soc-contejner">
+        <div class="soc-contejner-logo">
           <a class="logo-footer link" href="./index.html"
             >Web<span class="logo-color-footer">Studio</span></a
           >
@@ -496,7 +521,7 @@
                   required=""
                   placeholder="E-mail"
                 />
-                <button class="sub-btn">
+                <button class="sub-btn" type="button">
                   Subscribe<svg class="sub-icons">
                     <use href="./images/icons.svg#icon-frame"></use>
                   </svg>
@@ -595,13 +620,9 @@
 
     <!-- mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="btn-close-menu"
-          width="32px" height="32px"
-        >
-          <use href="./images/icons.svg#icon-close-1">
-            
-          </use>
+      <button type="button" class="menu-toggle-close js-close-menu">
+        <svg class="btn-close-menu" width="32px" height="32px">
+          <use href="./images/icons.svg#icon-close-1"></use>
         </svg>
       </button>
 
@@ -618,12 +639,14 @@
       </ul>
       <ul class="mobile-contacts list">
         <li class="mobile-address-item">
-          <a class=" mobile-phone-list link" href="tel:+110001111111"
-            >+11 (000) 111-11-11</a>
+          <a class="mobile-phone-list link" href="tel:+110001111111"
+            >+11(000)111-11-11</a
+          >
         </li>
         <li>
           <a class="mail-list link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a>
+            >info@devstudio.com</a
+          >
         </li>
       </ul>
       <ul class="mobile-soc-list list">
@@ -666,6 +689,5 @@
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-  </body>
   </body>
 </html>
