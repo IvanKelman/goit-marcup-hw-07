@@ -63,7 +63,7 @@ padding: 0 15px;
 }
 .navigation{
     display: flex;
-    margin: auto;
+    margin-right: auto;
 }
 @media screen and (max-width: 767px){
 .navigation{
@@ -82,6 +82,7 @@ padding: 0 15px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:#4d5ae5;
+    margin-right: 76px;
 }
 .logo-color{
 color:#2e2f42
