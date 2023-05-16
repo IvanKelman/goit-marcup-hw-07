@@ -51,9 +51,7 @@ padding: 0 15px;
 /* -----------heder----------- */
 .top-header{
     border: 1px solid  #E7E9FC;
-    box-shadow: 
-    0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
+    box-shadow:
     0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-cobntejner{
@@ -171,9 +169,6 @@ padding: 20px 0;
     
 }
 
-.mail-list:is(:hover, :focus) {
-    color: #404BBF
-}
 
 /* -----------section1----------- */
 .hero{
@@ -1144,15 +1139,30 @@ font-weight: 400;
     
 }
 @media screen and (min-width:320px) and (max-width:767px){ 
-    .products-procesing-text{
-    margin-bottom: 72px;
-}
+    .products-procesing {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 72px;}
 
 .list-produkt{
-    margin: 0;
+    margin: 0 ;
 
 }
 
+.team-item{
+display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+}
+
+
+.logo{
+    margin: 0;
+}
 }
 
 
@@ -1198,7 +1208,7 @@ font-weight: 400;
     }
     .team-item{
         width: 552px;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .team-list-foto{
@@ -1233,6 +1243,7 @@ font-weight: 400;
     .sub-input {
         width: 264px;
         margin-right: 24px;
+        margin-bottom: 0;
     }
     .sub-input-sektion {
         display: flex;
@@ -1279,10 +1290,16 @@ font-weight: 400;
         display: flex;
         width: 1128px;
     }
+        .header-address-item {
+            margin-bottom: 0;
+        }
     /* section 1 */
     .hero{
+        width: 1440px;
         padding: 188px 0;
+        margin: auto;
     }
+    
     /* section 2 */
     .setion-produkt-procesing {
         padding: 120px 0;
@@ -1306,7 +1323,7 @@ font-weight: 400;
     }
     .products-procesing-title {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         font-weight: 500;
         font-size: 20px;
@@ -1406,7 +1423,9 @@ justify-content: flex-start;
     width: 262px;
     
 }
-
+.footer-tablet{
+    gap: 0;
+}
 .soc-contejner-logo{
     margin-right: 120px;
 }
@@ -1574,9 +1593,10 @@ justify-content: flex-start;
 }
 .mail-menu{
     font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 .btn-close-menu{
     width: 8px;
